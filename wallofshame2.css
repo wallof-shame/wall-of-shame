@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #d1d1d1;
 }
 *{
     margin: 0;
@@ -126,14 +126,16 @@ body {
     border-radius: 5px;
     margin: 2.5%;
     margin-bottom: 100px;
-        border-top-right-radius: 3pc;
-    border-top-left-radius: 3pc;
+        border-top-left-radius: 8pc;
+        border-bottom-right-radius: 8pc;
+    
 }
 
 .image img {
     width: 100%;
-        border-top-right-radius: 3pc;
-    border-top-left-radius: 3pc;
+        border-top-left-radius: 3pc;
+         border-top-left-radius: 8pc;
+
 
     height: 350px;
 }
@@ -197,4 +199,49 @@ input:hover{
   margin-right: 50px;
 
 
+}
+
+#red{
+
+    width: 45px;
+    height: 45px;
+    border-radius: 2pc;
+    background-color:#ff0f28;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-size: 34px;
+}
+#blue{
+
+    width: 45px;
+    height: 45px;
+    border-radius: 2pc;
+    background-color: #38f8ff;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-size: 34px;
+}
+#yellow{
+
+    width: 45px;
+    height: 45px;
+    border-radius: 2pc;
+    background-color: #ffff29;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-size: 34px;
+}
+#green{
+
+    width: 45px;
+    height: 45px;
+    border-radius: 2pc;
+    background-color: #0dc900;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-size: 34px;
 }

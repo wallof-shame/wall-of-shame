@@ -8,12 +8,14 @@ body{
 
 .student-form{
  	width: 400px;
- 	 box-shadow: 0 0 3px 0 rgba(0,0,0,0.7);
- 	  background:#fff;
+ 	 box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
+ 	  background:#f2f2f2;
  	  	padding: 20px;
  	  	 margin: 8% auto 0 ;
  	  	  text-align: center;
  	  	  	opacity: 0.97;
+ 	  	  	border-radius: 25px;
+ 	  	  	opacity: 0.9;
 }
 
 .student-form h1 {
@@ -57,4 +59,8 @@ button
 }
 img {
 	width: 70px;
+}
+
+#pin {
+	display: inline-block;
 }
