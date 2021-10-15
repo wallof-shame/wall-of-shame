@@ -1,4 +1,3 @@
-
 var liste = [
     {
         name: "Achraf",
@@ -218,131 +217,115 @@ var liste = [
     },
 ];
 
+$(document).ready(function () {
+    addid();
 
-$( document ).ready(function ()
-{ 
-    addid ()
-  
-   for (var i = 0 ; i<liste.length;i++) 
-   {   
-    
-
-     
-       $("#container").append(`<div class="card">
+    for (var i = 0; i < liste.length; i++) {
+        $("#container").append(
+            `<div class="card">
             <div class="image">
                 <img
-                    src="`+liste[i].imagelink+`"
+                    src="` +
+                liste[i].imagelink +
+                `"
                 />
             </div>
             <div class="title">
-                <h1>`+liste[i].name+" "+liste[i].lastname+`</h1>
+                <h1>` +
+                liste[i].name +
+                " " +
+                liste[i].lastname +
+                `</h1>
             </div>
             <div class="des">
                 <p>You can Add Desccription Here...</p>
                 <button>Read More...</button>
             </div>
-        </div>`);       
-   }
-
+        </div>`
+        );
+    }
 });
 
+function addid() {
+    for (var i = 0; i < liste.length; i++) {
+        liste[i]["Id"] = i;
+    }
 
-
-function addid ()
-{
-     for(var i = 0; i<liste.length;i++)
-     {
-         liste[i]["Id"]=i;
-     }
-
-    
-    return liste 
+    return liste;
 }
 
+function search() {
+    var ch = $("#search").val();
+    ch = ch.toLocaleLowerCase();
+    var arr = [];
+    var str = "";
 
-function search()
-{
-   var ch= $("#search").val()
-   ch=ch.toLocaleLowerCase()
-     var arr=[]
-   var str="";
+    for (var i = 0; i < liste.length; i++) {
+        str = liste[i].name + " " + liste[i].lastname;
+        str = str.toLocaleLowerCase();
+        if (str.includes(ch)) {
+            arr.push(liste[i]);
+        }
+    }
 
-   for(var i = 0; i<liste.length;i++)
-   {  
-      str=liste[i].name+" "+liste[i].lastname
-      str=str.toLocaleLowerCase()
-            if(str.includes(ch))
-      {
-        arr.push(liste[i])
-      }
-   }
-
-
-   rend(arr);
-
+    rend(arr);
 }
 
+function rend(lst) {
+    $("#container").empty();
 
-
-
-function rend(lst)
-{ 
-    $("#container").empty()
- 
-  
-   for (var i = 0 ; i<lst.length;i++) 
-   {   
-    
-
-     
-       $("#container").append(`<div class="card">
+    for (var i = 0; i < lst.length; i++) {
+        $("#container").append(
+            `<div class="card">
             <div class="image">
                 <img
-                    src="`+lst[i].imagelink+`"
+                    src="` +
+                lst[i].imagelink +
+                `"
                 />
             </div>
             <div class="title">
-                <h1>`+lst[i].name+" "+lst[i].lastname+`</h1>
+                <h1>` +
+                lst[i].name +
+                " " +
+                lst[i].lastname +
+                `</h1>
             </div>
             <div class="des">
                 <p>You can Add Desccription Here...</p>
                 <button>Read More...</button>
             </div>
-        </div>`);       
-   }
-
+        </div>`
+        );
+    }
 }
 
+function refresh() {
+    console.log("hahah");
+    $("#container").empty();
 
-
-function refresh()
-{
-     console.log("hahah")
-   $("#container").empty()
-
-
- 
-   for (var i = 0 ; i<liste.length;i++) 
-   {   
-    
-
-     
-       $("#container").append(`<div class="card">
+    for (var i = 0; i < liste.length; i++) {
+        $("#container").append(
+            `<div class="card">
             <div class="image">
                 <img
-                    src="`+liste[i].imagelink+`"
+                    src="` +
+                liste[i].imagelink +
+                `"
                 />
             </div>
             <div class="title">
-                <h1>`+liste[i].name+" "+liste[i].lastname+`</h1>
+                <h1>` +
+                liste[i].name +
+                " " +
+                liste[i].lastname +
+                `</h1>
             </div>
             <div class="des">
                 <p>You can Add Desccription Here...</p>
                 <button>Read More...</button>
             </div>
-        </div>`);       
-   
-
-}
-
+        </div>`
+        );
+    }
 }
