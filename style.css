@@ -1,0 +1,60 @@
+body{
+	margin:0;
+		padding: 0;
+			font-family: sans-serif;
+				background-image: url("registrationblured.jpg");
+					background-size: cover;
+}
+
+.student-form{
+ 	width: 400px;
+ 	 box-shadow: 0 0 3px 0 rgba(0,0,0,0.7);
+ 	  background:#fff;
+ 	  	padding: 20px;
+ 	  	 margin: 8% auto 0 ;
+ 	  	  text-align: center;
+ 	  	  	opacity: 0.97;
+}
+
+.student-form h1 {
+	color: #2cb0bf;
+	     margin-bottom: 30px;
+}
+.input-box
+{
+	border-radius: 20px;
+		padding: 10px;
+			margin:10px;
+				width: 80%;
+					border:1px solid #999;
+						outline: none;;
+}
+button 
+{
+	color: #fff;
+	width: 80%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin:10px 0;
+	border:none;
+	outline: none;
+	cursor: pointer;
+
+
+}
+.submit-btn
+{
+	background-color: #2cb0bf;
+}
+.home-btn{
+	background-color: #ff8400;
+}
+.or{
+	background: #fff;
+	width: 30px;
+	margin: -19px auto 10px ;
+}
+img {
+	width: 70px;
+}
