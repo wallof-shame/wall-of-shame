@@ -20,6 +20,7 @@ body {
 }
 nav
 {
+    background-color: #dbdbdb;
     display: flex;
     width: 100%;
     align-items: center;
@@ -122,18 +123,20 @@ body {
 .card {
     width: 20%;
         display: inline-block;
-    box-shadow: 2px 2px 10px  #DB7093   ;
+    box-shadow: 2px 2px 10px  #DB7093  ;
     border-radius: 5px;
     margin: 2.5%;
     margin-bottom: 100px;
-        border-top-right-radius: 3pc;
-    border-top-left-radius: 3pc;
+        border-top-left-radius: 8pc;
+        border-bottom-right-radius: 8pc;
+    
 }
 
 .image img {
     width: 100%;
-        border-top-right-radius: 3pc;
-    border-top-left-radius: 3pc;
+        border-top-left-radius: 3pc;
+         border-top-left-radius: 8pc;
+
 
     height: 350px;
 }
@@ -162,7 +165,7 @@ button {
     background-color: white;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 10px;
+    padding: 3px;
 }
 button:hover {
     background-color: black;
@@ -195,6 +198,51 @@ background-color: #ffe8fc;
   margin-top: 50px;
   float: right;
   margin-right: 50px;
+  
 
+}
 
+#red{
+
+    width: 45px;
+    height: 45px;
+    border-radius: 2pc;
+    background-color:#ff0f28;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-size: 34px;
+}
+#blue{
+
+    width: 45px;
+    height: 45px;
+    border-radius: 2pc;
+    background-color: #38f8ff;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-size: 34px;
+}
+#yellow{
+
+    width: 45px;
+    height: 45px;
+    border-radius: 2pc;
+    background-color: #ffff29;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-size: 34px;
+}
+#green{
+
+    width: 45px;
+    height: 45px;
+    border-radius: 2pc;
+    background-color: #0dc900;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-size: 34px;
 }

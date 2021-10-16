@@ -3,21 +3,27 @@
 <head>
 	<title>Wall of shame</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 	<div class="bg-image"></div>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <div id="container">
+       
+        </div>
 <div class="bg-text">
   <div class="student-form">
   	<img src="https://icons.iconarchive.com/icons/custom-icon-design/flatastic-4/512/Male-user-add-icon.png">
   	<h1>Student registration</h1>
   	
-  	 <input type="text" name="name" class="input-box" placeholder="Name">
-  	  	 <input type="text" name="Lastname" class="input-box" placeholder="Last Name">
-  	  	  	 <input type="Email" name="Email" class="input-box" placeholder="Email">
-  	  	  	  	 <input type="text" name="name" class="input-box" placeholder="image src">
+  	 <input type="text" id="name" name="name" class="input-box" placeholder="Name">
+  	  	 <input type="text" id="Lastname" name="Lastname" class="input-box" placeholder="Last Name">
+  	  	  
+  	  	  	  	 <input type="text" id="img" name="name" class="input-box" placeholder="image src">
   	  	  	  	     <p><span><input type="checkbox" name=""></span>i agree to terms of services</p>
-  	  	  	  	        <button type="button" class="submit-btn">add student</button>
+  	  	  	  	        <button type="button" onclick="add()" class="submit-btn">add student</button>
   	  	  	  	          <hr>
   	  	  	  	            <p class="or">OR</p> 
   	  	  	  	               <button class="home-btn" onclick="gohome()">Home</button>
@@ -25,6 +31,10 @@
   
 
   </div>
+
+
+     
+
 <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
