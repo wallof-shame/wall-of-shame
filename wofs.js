@@ -1,6 +1,8 @@
 var liste = JSON.parse(localStorage.getItem('lst'));
 
 
+$(document).ready(function () {
+    addid();
 
 $( document ).ready(function ()
 { 
@@ -10,42 +12,33 @@ $( document ).ready(function ()
 
 });
 
+function addid() {
+    for (var i = 0; i < liste.length; i++) {
+        liste[i]["Id"] = i;
+    }
 
-
-function addid ()
-{
-     for(var i = 0; i<liste.length;i++)
-     {
-         liste[i]["Id"]=i;
-     }
-
-    
-    return liste 
+    return liste;
 }
 
+function search() {
+    var ch = $("#search").val();
+    ch = ch.toLocaleLowerCase();
+    var arr = [];
+    var str = "";
 
-function search()
-{
-   var ch= $("#search").val()
-   ch=ch.toLocaleLowerCase()
-     var arr=[]
-   var str="";
+    for (var i = 0; i < liste.length; i++) {
+        str = liste[i].name + " " + liste[i].lastname;
+        str = str.toLocaleLowerCase();
+        if (str.includes(ch)) {
+            arr.push(liste[i]);
+        }
+    }
 
-   for(var i = 0; i<liste.length;i++)
-   {  
-      str=liste[i].name+" "+liste[i].lastname
-      str=str.toLocaleLowerCase()
-            if(str.includes(ch))
-      {
-        arr.push(liste[i])
-      }
-   }
-
-
-   rend(arr);
-
+    rend(arr);
 }
 
+function rend(lst) {
+    $("#container").empty();
 
 
 
