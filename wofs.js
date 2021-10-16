@@ -99,24 +99,46 @@ function refresh()
 
 }
 
+function remove(index)
+{
+   console.log("remove"+liste[index].name )
+   liste[index]=liste[liste.length-1]
+   liste.pop()
+   localStorage.setItem('lst', JSON.stringify(liste));
+
+}
+
+
+
+
 
 function redpin(i)
 {
 
-   liste[i].pins[0]+=1
-   refresh()
 
+   if(liste[i].pins[0]<5) 
+   { 
+    liste[i].pins[0]+=1
+    localStorage.setItem('lst', JSON.stringify(liste));
+    refresh()
+   }
+   else
+   {
+    localStorage.setItem('lst', JSON.stringify(liste));
+     remove(i)
+     refresh()
+   }
 }
 function bluepin(i)
 {
    if(liste[i].pins[1]>=5)
-   {
+   {localStorage.setItem('lst', JSON.stringify(liste));
     liste[i].pins[0]+=1
     liste[i].pins[1]=0;
     refresh()
 
    } 
-   else{
+   else{localStorage.setItem('lst', JSON.stringify(liste));
    liste[i].pins[1]+=1
    refresh()}
 
@@ -124,28 +146,30 @@ function bluepin(i)
 function yellowpin(i)
 {
  if(liste[i].pins[2]>=5)
-   {
+   {localStorage.setItem('lst', JSON.stringify(liste));
     liste[i].pins[0]+=1
     liste[i].pins[2]=0;
     refresh()
 
    } 
  else
- {  liste[i].pins[2]+=1
+ { localStorage.setItem('lst', JSON.stringify(liste));
+   liste[i].pins[2]+=1
    refresh()}
 
 }
 function greenpin(i)
 {
     if(liste[i].pins[3]>=5)
-   {
+   {localStorage.setItem('lst', JSON.stringify(liste));
     liste[i].pins[0]+=1
     liste[i].pins[3]=0;
     refresh()
 
    } 
   else{liste[i].pins[3]+=1
+    localStorage.setItem('lst', JSON.stringify(liste));
    refresh()}
-
+  
 }
 

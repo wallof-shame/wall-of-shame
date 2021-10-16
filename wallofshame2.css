@@ -20,6 +20,7 @@ body {
 }
 nav
 {
+    background-color: #dbdbdb;
     display: flex;
     width: 100%;
     align-items: center;
@@ -164,7 +165,7 @@ button {
     background-color: white;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 10px;
+    padding: 3px;
 }
 button:hover {
     background-color: black;
@@ -197,7 +198,7 @@ input:hover{
   margin-top: 50px;
   float: right;
   margin-right: 50px;
-
+  
 
 }
 
